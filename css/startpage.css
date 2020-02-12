@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+	
+}
+
+header {
+	background: lightpink;	
+	width: 100%;
+	height: 100%;
+}
