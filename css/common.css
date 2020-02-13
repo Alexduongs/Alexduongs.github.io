@@ -1,0 +1,166 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header,
+section,
+aside,
+footer {
+	border: 1px solid #333;
+	margin: 0;
+}
+
+header {
+	grid-area: header;
+	background-color: #20452E;
+	width: auto;
+	display: flex;
+	align-items:;
+	justify-content: center;
+
+}
+
+section {	
+	grid-area: section;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.hamburgerlogo {
+	display:;
+	width: 150px;
+	height: 150px;
+	margin: -20px;
+
+}
+
+.logohead {
+	width: 50px;
+	height: 50px;
+	}
+
+.container {
+	margin: 0 auto;
+	border: 1px solid #333;
+	width: auto;
+	display: grid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 90px repeat(3, minmax(200px, auto));
+	grid-template-areas: 
+		"header"
+		"section"
+		"aside"
+		"footer";
+}
+
+/*Hamburger*/
+input[type=checkbox] {
+    position: fixed;
+    right: -9999px;
+    opacity: 0;
+    }
+
+
+.nav-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 99;
+    margin-left:10px;
+    /* add the animation*/
+    transition: margin .3s;
+    }
+
+.nav-toggle span {
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #000;
+    /* add the animation*/
+    transition: all .3s;
+    }
+
+.nav-toggle span:nth-child(2) {top: 8px;}
+.nav-toggle span:nth-child(3) {top: 16px;}
+
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    height:100%;
+    margin-left:-300px;
+    background: #fff;
+    padding: 15px;
+    /* add the animation*/
+    transition: margin .3s;
+    left:0;
+    }
+
+.menu a {
+	margin:40px;
+}
+
+input[type=checkbox]:checked ~ .nav-toggle {
+  margin-left: 260px;
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
+    top: 12px;
+    transform: rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked ~  .menu {
+    margin-left: 0px;
+} 
+
+li{
+	list-style: none;
+	margin: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav.menu ul ul {
+   max-height:0;
+   overflow:hidden;
+   transition: max-height .3s;
+}
+
+nav.menu ul li:hover > ul {
+    max-height:600px;
+   height:auto;
+}
+
+li a::after { content:  '+';transition: .2s;display: inline-block;margin-left:5px  }
+li a:hover::after {content:  ' +';transform: rotate(45deg);}
+li a:only-child::after { content: ''; }
+
