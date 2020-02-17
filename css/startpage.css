@@ -1,8 +1,7 @@
 section {
 	display: grid;
 	background-image: url("../images/home-phone.jpg");
-	background-size: cover;
-	width: a;
+	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	grid-template-rows: minmax(200px, auto) repeat(3, minmax(200px, auto));
