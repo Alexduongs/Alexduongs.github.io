@@ -1,36 +1,6 @@
 *{
 	box-sizing: border-box;
-	margin: 0;
-}
-
-header,
-section,
-aside,
-footer {
-	border: 1px solid #333;
-	margin: 0;
-}
-
-header {
-	grid-area: header;
-	background-color: #20452E;
-	width: auto;
-	display: flex;
-	align-items:;
-	justify-content: center;
-
-}
-
-section {	
-	grid-area: section;
-}
-
-aside {
-	grid-area: aside;
-}
-
-footer {
-	grid-area: footer;
+	margin: 0; padding;
 }
 
 .hamburgerlogo {
@@ -42,23 +12,7 @@ footer {
 
 .logohead {
 	width: 100px;
-	height: 9	0px;
-	}
-
-
-.container {
-	margin: 0 auto;
-	border: 1px solid #333;
-	width: auto;
-	display: grid;
-
-	grid-template-columns: 1fr;
-	grid-template-rows: 90px repeat(3, minmax(200px, auto));
-	grid-template-areas: 
-		"header"
-		"section"
-		"aside"
-		"footer";
+	height: 9 0px;
 }
 
 i {

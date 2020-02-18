@@ -1,9 +1,57 @@
-section {
+header,
+section,
+aside,
+footer {
+	border: 1px solid #333;
+	margin: 0;
+}
+
+content {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.startpage_img {
+	width:200%;
+	margin-left: -200px;
+	align-self: center;
+}
+
+header {
+	grid-area: header;
+	background-color: #20452E;
+	width: auto;
+	display: flex;
+	align-items:;
+	justify-content: center;
+}
+
+content {grid-area: content;}
+section {grid-area: section;}
+footer {grid-area: footer;}
+
+.container {
+	margin: 0 auto;
+	border: 1px solid #333;
+	width: auto;
 	display: grid;
-	background-image: url("../images/home-phone.jpg");
-	background-size: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	grid-template-rows: minmax(200px, auto) repeat(3, minmax(200px, auto));
+	grid-template-columns: 1fr;
+	grid-template-rows: 90px repeat(2, minmax(200px, auto));
+	grid-template-areas: 
+		"header"
+		"content"
+		"footer";
+}
+
+content section {
+	flex: 1 1 ;
+}
+
+.content-section-2 {
+	height: 200px;
+	background-color: #132F4B;
 }
 
