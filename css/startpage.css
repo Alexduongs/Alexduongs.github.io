@@ -1,10 +1,10 @@
-header,
+/*header,
 section,
 aside,
 footer {
 	border: 1px solid #333;
 	margin: 0;
-}
+}*/
 
 content {
 	width: 100%;
@@ -17,17 +17,9 @@ content {
 .startpage_img {
 	width:200%;
 	margin-left: -200px;
-	align-self: center;
 }
 
-header {
-	grid-area: header;
-	background-color: #20452E;
-	width: auto;
-	display: flex;
-	align-items:;
-	justify-content: center;
-}
+
 
 content {grid-area: content;}
 section {grid-area: section;}
@@ -35,11 +27,10 @@ footer {grid-area: footer;}
 
 .container {
 	margin: 0 auto;
-	border: 1px solid #333;
 	width: auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 90px repeat(2, minmax(200px, auto));
+	grid-template-rows: 50px repeat(2, minmax(100px, auto));
 	grid-template-areas: 
 		"header"
 		"content"
@@ -47,11 +38,16 @@ footer {grid-area: footer;}
 }
 
 content section {
-	flex: 1 1 ;
+	flex: 1 1 auto;
+}
+
+.content-section-1 {
+	margin: 0;
+	padding: 0;
 }
 
 .content-section-2 {
 	height: 200px;
-	background-color: #132F4B;
+	background-color: #20452E;
 }
 
