@@ -49,5 +49,6 @@ content section {
 .content-section-2 {
 	height: 200px;
 	background-color: #20452E;
+	margin-top: -5px;
 }
 
