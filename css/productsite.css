@@ -1,5 +1,5 @@
 body{
-	background-color: #777;
+	background-color: #fff;
 }
 
 header,
@@ -16,7 +16,6 @@ section img {
 
 header{
 	grid-area: header;
-
 }
 
 section{
@@ -33,14 +32,14 @@ footer{
 }
 
 p {
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	
 }
 
 h2 {
 	display: flex;
 	color: #FFA400;
-	margin-top: -250px;
+	margin-top: -200px;
 	justify-content: center;
 	text-shadow: 0.5px 0.5px;
 	padding-top: 30px;
@@ -60,22 +59,50 @@ h3 {
 .omkassen {
 	background-color: pink;
 	padding: 20px;
-	
 }
 
-
-
-.hallon {
-	background-color: green;
+ p .omkassen{
+	font-size: 14px;
 }
 
 .recept{
+	background-color: white;
+	letter-spacing: 1px;
+	margin: 10px;
+	padding: 10px;
 }
 
+.recept img {
+	border-radius: 3px;
+}
+
+.pris {
+	background-color: white;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pris p {
+	font-size: 18px;
+	margin: 10px;
+	word-spacing: 1px;
+}
+
+.button {
+	  align-self: flex-end;
+	  background-color: #F0AC24;
+	  border: none;
+	  border-radius: 5px;
+	  color: white;
+	  padding: 5px 16px;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 10px 16px;
+}
 
 .container {
 	margin: 0 auto;
-	border: 1px solid #333;
 	width: auto;
 	display: grid;
 
