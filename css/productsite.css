@@ -1,0 +1,90 @@
+body{
+	background-color: #777;
+}
+
+header,
+section,
+aside,
+footer {
+	margin: 0;
+}
+
+section img {
+	width: 100%;
+	height: auto;
+}
+
+header{
+	grid-area: header;
+
+}
+
+section{
+	grid-area: section;
+}
+
+content{
+	grid-area: content;
+}
+
+
+footer{
+	grid-area: footer;
+}
+
+p {
+	letter-spacing: 1px;
+	
+}
+
+h2 {
+	display: flex;
+	color: #FFA400;
+	margin-top: -250px;
+	justify-content: center;
+	text-shadow: 0.5px 0.5px;
+	padding-top: 30px;
+}
+
+h3 {
+	color: #003B00;
+	display: flex;
+	justify-content:center;
+	margin-top: 20px;
+	text-shadow: 0.5px 0.5px #777;
+}
+
+.box1 {
+}
+
+.omkassen {
+	background-color: pink;
+	padding: 20px;
+	
+}
+
+
+
+.hallon {
+	background-color: green;
+}
+
+.recept{
+}
+
+
+.container {
+	margin: 0 auto;
+	border: 1px solid #333;
+	width: auto;
+	display: grid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(0px, auto) repeat(4, minmax(200px, auto));
+	grid-template-areas: 
+		"header"
+		"section"
+		"content"
+		"aside"
+		"footer";
+}
