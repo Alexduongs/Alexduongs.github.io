@@ -1,4 +1,37 @@
-body {
+* {
 	box-sizing: border-box;
-	padding: 10px;
+	margin: 0; padding;
 }
+
+.container {
+    margin: 0 auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(2, minmax(100px, auto));
+    grid-template-areas: 
+        "header"
+        "content"
+        "footer";
+}
+
+content {grid-area: content;}
+section {grid-area: section;}
+footer {grid-area: footer;}
+
+
+content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.content img {
+	width: 100%;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+
+
+
