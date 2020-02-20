@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+* {
+	font-family: 'Playfair Display', serif;
+}
+
 body{
 	background-color: #fff;
 }
@@ -41,23 +46,39 @@ h2 {
 	color: #FFA400;
 	margin-top: -200px;
 	justify-content: center;
-	text-shadow: 0.5px 0.5px;
+	text-shadow: 1px 1px #000;
 	padding-top: 30px;
+	font-size: 50px;
 }
 
 h3 {
-	color: #003B00;
+	color: #13693A;
 	display: flex;
 	justify-content:center;
-	margin-top: 20px;
-	text-shadow: 0.5px 0.5px #777;
+	margin-top: ;
+	text-shadow: 1px 1px #000;
+	font-size: 30px;
 }
 
 .box1 {
+	min-height: 300px;
+}
+
+.box1 button {
+	background-color: #F0AC24;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 16px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 16px;
+	margin-left: 44%;
 }
 
 .omkassen {
-	background-color: pink;
+	background-color: #fff;
 	padding: 20px;
 }
 
@@ -65,11 +86,30 @@ h3 {
 	font-size: 14px;
 }
 
+.navrecept{
+	display: flex;
+	padding: 10px;
+
+}
+
+.navrecept button{
+	justify-content: space-around;
+	background-color: #13693A;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	margin:10px;
+
+}
+
 .recept{
 	background-color: white;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	margin: 10px;
-	padding: 10px;
+	padding: 0;
 }
 
 .recept img {
@@ -107,11 +147,10 @@ h3 {
 	display: grid;
 
 	grid-template-columns: 1fr;
-	grid-template-rows: minmax(0px, auto) repeat(4, minmax(200px, auto));
+	grid-template-rows: minmax(0px, auto) repeat(4, minmax(100px, auto));
 	grid-template-areas: 
 		"header"
 		"section"
 		"content"
-		"aside"
 		"footer";
 }
