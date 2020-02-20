@@ -1,7 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
 * {
 	box-sizing: border-box;
 	margin: 0; padding;
+	background: linear-gardient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+	background-size: cover;
 }
+
 
 .container {
     margin: 0 auto;
@@ -27,11 +32,93 @@ content {
 	overflow: hidden;
 }
 
+.matkassar {
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 2rem;
+}
+
+.veg {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	font-size: 2rem;
+	transform: translate(-50%, -50%);
+}
+
+.flex {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	font-size: 2rem;
+	transform: translate(-50%, -50%);
+}
+
+.gluten {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	font-size: 2rem;
+	transform: translate(-50%, -50%);
+}
+
+.morgon {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	font-size: 2rem;
+	transform: translate(-50%, -50%);
+}
+
 .content img {
 	width: 100%;
 	flex-shrink: 1;
 	flex-grow: 1;
 }
 
+.button1{
+	flex-direction: row;
+	justify-content: space-around;
+    background-color: #13693A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:10px;
+    position: center;
+}
+
+.button2 {
+	flex-direction: row;
+	justify-content: space-around;
+    background-color: #13693A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:10px;
+    position: center;
+}
 
 
