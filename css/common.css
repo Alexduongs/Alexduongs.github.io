@@ -38,7 +38,8 @@ header i:nth-child(2) {
     margin-right: 23px;
 }
 
-p {
+label p,
+header p {
     font-size: 9px;
 }
 
