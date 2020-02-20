@@ -15,7 +15,7 @@ footer {grid-area: footer;}
 	width: auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 50px repeat(2, minmax(100px, auto));
+	grid-template-rows: minmax(0px, auto) repeat(2, minmax(100px, auto));
 	grid-template-areas: 
 		"header"
 		"content"
@@ -40,6 +40,21 @@ content section {
 	margin-left: -170px;
 }
 
+.startpage_logo {
+	width: 400px;
+	margin-top: 110px;
+}
+
+.content-section-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-section-1 div:last-child {
+	position: absolute;
+}
+
 .content-section-2 {
 	height: 200px;
 	background-color: #20452E;
@@ -50,10 +65,23 @@ content section {
 	padding: 10px;
 	color: #fff;
 	font-size: 1.3em;
+	border-radius: 5px;
+}
+
+.content-section-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.content-section-3 h2{
+	align-self: flex-end;
 }
 
 [class*=content-section-] {
 	margin: 15px 15px 0;
+	color: #fff;
 }
 
 .content-img {
@@ -62,7 +90,5 @@ content section {
 	border-radius: 5px;
 }
 
-.content-section-5 img{
- 	height:450px;
- }
+
 

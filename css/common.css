@@ -13,6 +13,7 @@
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 9;
 }
 
 .hamburgerlogo {
