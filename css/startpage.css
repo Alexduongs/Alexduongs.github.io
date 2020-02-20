@@ -41,7 +41,7 @@ content section {
 }
 
 .startpage_logo {
-	width: 400px;
+	width: 100%;
 	margin-top: 110px;
 }
 
@@ -55,7 +55,7 @@ content section {
 	position: absolute;
 }
 
-.content-section-2 {
+.content-section2 {
 	height: 200px;
 	background-color: #20452E;
 	margin-top: -5px;
@@ -65,18 +65,39 @@ content section {
 	padding: 10px;
 	color: #fff;
 	font-size: 1.3em;
-	border-radius: 5px;
+	border-radius: 5px;	
+	margin: 15px 15px 0;
 }
 
-.content-section-3 {
+.content-section2 p{
+	position: static!important;
+	margin: 0!important;
+}
+
+[class*=content-section-] {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-
+	justify-content: center;
+	align-items: flex-start;
 }
 
-.content-section-3 h2{
-	align-self: flex-end;
+[class*=content-section-] h1 {
+	position: absolute;
+	font-size: 2em;
+	margin-top: 50px;
+	margin-left: 0px;
+	text-shadow: 0 0 3px black, 0 0 5px black;
+}
+
+[class*=content-section-] p {
+	position: absolute;
+	text-align: center;
+	font-size: 1.2em;	
+	margin: 125px 40px 0 0px;
+	text-shadow: 0 0 3px black, 0 0 5px black;	
+}
+
+.content-section-4 p {
+	margin: 125px 25px 0 10px;
 }
 
 [class*=content-section-] {
@@ -90,5 +111,22 @@ content section {
 	border-radius: 5px;
 }
 
+.content-section-6 {
+	margin-bottom: 15px;
+}
 
+button {
+	position: absolute;
+	align-self: center;
+	margin-top: 100px;
+	background-color: #13693A;
+    border: none;
+    border-radius:5px;
+    color: white;
+    width: 30%;
+    height: 8%;
+    padding:3px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
 
