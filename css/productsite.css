@@ -1,0 +1,117 @@
+body{
+	background-color: #fff;
+}
+
+header,
+section,
+aside,
+footer {
+	margin: 0;
+}
+
+section img {
+	width: 100%;
+	height: auto;
+}
+
+header{
+	grid-area: header;
+}
+
+section{
+	grid-area: section;
+}
+
+content{
+	grid-area: content;
+}
+
+
+footer{
+	grid-area: footer;
+}
+
+p {
+	letter-spacing: 2px;
+	
+}
+
+h2 {
+	display: flex;
+	color: #FFA400;
+	margin-top: -200px;
+	justify-content: center;
+	text-shadow: 0.5px 0.5px;
+	padding-top: 30px;
+}
+
+h3 {
+	color: #003B00;
+	display: flex;
+	justify-content:center;
+	margin-top: 20px;
+	text-shadow: 0.5px 0.5px #777;
+}
+
+.box1 {
+}
+
+.omkassen {
+	background-color: pink;
+	padding: 20px;
+}
+
+ p .omkassen{
+	font-size: 14px;
+}
+
+.recept{
+	background-color: white;
+	letter-spacing: 1px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.recept img {
+	border-radius: 3px;
+}
+
+.pris {
+	background-color: white;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pris p {
+	font-size: 18px;
+	margin: 10px;
+	word-spacing: 1px;
+}
+
+.button {
+	  align-self: flex-end;
+	  background-color: #F0AC24;
+	  border: none;
+	  border-radius: 5px;
+	  color: white;
+	  padding: 5px 16px;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 10px 16px;
+}
+
+.container {
+	margin: 0 auto;
+	width: auto;
+	display: grid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(0px, auto) repeat(4, minmax(200px, auto));
+	grid-template-areas: 
+		"header"
+		"section"
+		"content"
+		"aside"
+		"footer";
+}
