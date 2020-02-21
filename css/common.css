@@ -14,6 +14,7 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 9;
+    padding-left: 85px;
 }
 
 .hamburgerlogo {
@@ -25,7 +26,7 @@
 .logohead {
 	width: 2.5em;
 	height: 2.5em;
-    margin-right: 21%;
+    margin: 0 auto;
 }
 
 header i {
@@ -108,7 +109,7 @@ input[type=checkbox] {
     /* add the animation*/
     transition: margin .3s;
     left:0;
-    z-index: 9;
+    z-index: 10;
 }
 
 .menu a {
@@ -131,7 +132,7 @@ input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
 }
 
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(3) {
-    top: 9px;
+    top: 10px;
     transform: rotate(-45deg);
 }
 
@@ -153,9 +154,9 @@ a {
 	color: #000;
 }
 
-li a::after { content:  '+';transition: .2s;display: inline-block;margin-left:5px  }
-li a:hover::after {content:  ' +';transform: rotate(45deg);}
-li a:only-child::after { content: ''; }
+li a::after {content:'+';transition: .2s;display: inline-block;margin-left:5px;}
+li a:hover::after {content:'+';transform: rotate(45deg);}
+li a:only-child::after {content:'';}
 
 footer {
     display: flex;
@@ -176,4 +177,11 @@ footer div:last-child {
 }
 
 h5 {font-size: 1.2em}
+
+@media only screen and (min-width: 767px){
+    
+}
+
+
+
 

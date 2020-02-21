@@ -6,6 +6,11 @@ footer {
 	margin: 0;
 }*/
 
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap%27');
+* {
+    font-family: 'Playfair Display', serif;
+}
+
 content {grid-area: content;}
 section {grid-area: section;}
 footer {grid-area: footer;}
@@ -35,20 +40,22 @@ content section {
 }
 
 .startpage_img {
-	width:165%;
-	height: 420px;
-	margin-left: -170px;
+	width:100%;
+	height: 100%;
+	margin-top: 50px;
 }
 
 .startpage_logo {
-	width: 100%;
-	margin-top: 110px;
-}
+		width: 58%;
+		margin: 84px auto 0;
+		display: block;
+	}
 
 .content-section-1 {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center!important;
+	margin: 0!important;
 }
 
 .content-section-1 div:last-child {
@@ -56,7 +63,7 @@ content section {
 }
 
 .content-section2 {
-	height: 200px;
+	height: auto;
 	background-color: #20452E;
 	margin-top: -5px;
 	display: flex;
@@ -65,8 +72,7 @@ content section {
 	padding: 10px;
 	color: #fff;
 	font-size: 1.3em;
-	border-radius: 5px;	
-	margin: 15px 15px 0;
+	padding: 30px;
 }
 
 .content-section2 p{
@@ -78,6 +84,8 @@ content section {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	margin: 5px 5px 0;
+	color: #fff;
 }
 
 [class*=content-section-] h1 {
@@ -91,18 +99,13 @@ content section {
 [class*=content-section-] p {
 	position: absolute;
 	text-align: center;
-	font-size: 1.2em;	
+	font-size: 1.4em;	
 	margin: 125px 40px 0 0px;
 	text-shadow: 0 0 3px black, 0 0 5px black;	
 }
 
 .content-section-4 p {
 	margin: 125px 25px 0 10px;
-}
-
-[class*=content-section-] {
-	margin: 15px 15px 0;
-	color: #fff;
 }
 
 .content-img {
@@ -112,7 +115,7 @@ content section {
 }
 
 .content-section-6 {
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 
 button {
@@ -124,9 +127,17 @@ button {
     border-radius:5px;
     color: white;
     width: 30%;
-    height: 8%;
+    height: 6%;
     padding:3px;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
+
+@media only screen and (min-width: 767px){
+	
+}
+
+
+
+
 
