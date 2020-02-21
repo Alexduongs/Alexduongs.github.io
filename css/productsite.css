@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
 * {
 	font-family: 'Playfair Display', serif;
 }
@@ -36,73 +37,71 @@ footer{
 	grid-area: footer;
 }
 
-p {
-	letter-spacing: 2px;
-	
-}
-
 h2 {
 	display: flex;
 	color: #FFA400;
-	margin-top: -300px;
 	justify-content: center;
-	text-shadow: 1px 1px #000;
-	padding-top: 30px;
-	font-size: 50px;
+	font-size: 40px;
+	margin-top: 100px;
 }
 
 h3 {
 	color: #13693A;
 	display: flex;
 	justify-content:center;
-	margin-top: ;
-	text-shadow: 1px 1px #000;
+	font-size: 20px;
+}
+
+.prod-summery-list li{
+	list-style: initial;
+}
+
+.vegslog{
+	text-align: center;
 	font-size: 20px;
 }
 
 .box1 {
-	min-height: 300px;
+	min-height: 200px;
 }
 
 .omkassen button {
+	display: block;
 	background-color: #F0AC24;
 	border: none;
 	border-radius: 5px;
 	color: white;
-	padding: 10px 36px;
+	padding: 7px 29px;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
-	margin: 10px 16px;
-	margin-left:350px;
+	width: 30%;
+	margin:0 auto;
 }
 
 .omkassen {
 	background-color: #fff;
 	padding: 20px;
-}
-
- p .omkassen{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	font-size: 14px;
 }
 
 .navrecept{
+	flex-wrap: wrap;
 	display: flex;
 	padding: 10px;
-
 }
 
 .navrecept button{
-	justify-content: space-around;
 	background-color: #13693A;
 	border: none;
-	border-radius: 5px;
+	border-radius:8px;
 	color: white;
-	padding: 5px 16px;
+	padding: 10px 4px;
 	text-decoration: none;
-	font-size: 16px;
-	margin:10px;
-
+	font-size: 14px;
+	margin: 7px;
 }
 
 .recept{
@@ -110,6 +109,7 @@ h3 {
 	letter-spacing: 0px;
 	margin: 10px;
 	padding: 0;
+	font-size: 14px;
 }
 
 .recept img {
@@ -120,25 +120,34 @@ h3 {
 	background-color: white;
 	display: flex;
 	flex-wrap: nowrap;
+	font-size: 16px;
+	padding:10px 20px;
 }
 
 .pris p {
-	font-size: 18px;
-	margin: 10px;
 	word-spacing: 1px;
+
+}
+.text{
+	padding: 10px 20px;
 }
 
+.text p{
+	margin-top: 10px;
+}
+
+
 .button {
-	  align-self: flex-end;
-	  background-color: #F0AC24;
-	  border: none;
-	  border-radius: 5px;
-	  color: white;
-	  padding: 5px 16px;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  margin: 10px 16px;
+	align-self: flex-end;
+	background-color: #F0AC24;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 16px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 16px;
 }
 
 .container {
@@ -154,9 +163,39 @@ h3 {
 		"content"
 		"footer";
 }
-/*for tablets*/
-@media only screen and (min-width: 600px)
+/* Tablets */
+@media only screen and (min-width: 767px){
+	.navrecept button{
+	margin:0 auto;
+}
 
+.button{
+	padding: 20px 46px;
+	margin:0 auto;
+}
+
+.pris {
+	justify-content: space-between;
+	padding: 10px 30px;
+}
+
+
+}
+
+/* Smaller desktop */
+@media only screen and (min-width: 960px) and (max-width: 1200px){
+
+	.button{
+	padding: 20px 46px;
+	margin:0 auto;
+}
+
+}
+
+/* Big desktop */
+@media only screen and (min-width: 1200px){
+
+}
 
 
 
