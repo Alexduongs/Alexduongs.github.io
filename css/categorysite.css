@@ -37,8 +37,10 @@ content {
 	font-weight: 900;
 	margin: 0;
 	font-size: 20px;
-	color: #26732b;
+	color: #2a5427;
 	text-align: center;
+	background-color: rgba(256, 256, 256, 0.7);
+	height: 10%;
 }
 
 .flex h2 {
@@ -46,8 +48,10 @@ content {
 	font-weight: 900;
 	margin: 0;
 	font-size: 20px;
-	color: #26732b;
+	color: #2a5427;
 	text-align: center;
+	background-color: rgba(256, 256, 256, 0.7);
+	height: 10%;
 }
 
 .gluten h2 {
@@ -55,8 +59,10 @@ content {
 	font-weight: 900;
 	margin: 0;
 	font-size: 20px;
-	color: #26732b;
+	color: #2a5427;
 	text-align: center;
+	background-color: rgba(256, 256, 256, 0.7);
+	height: 10%;
 }
 
 .morgon h2 {
@@ -64,8 +70,10 @@ content {
 	font-weight: 900;
 	margin: 0;
 	font-size: 20px;
-	color: #26732b;
+	color: #2a5427;
 	text-align: center;
+	background-color: rgba(256, 256, 256, 0.7);
+	height: 10%;
 }
 
 button{
@@ -79,42 +87,57 @@ button{
     font-size: 16px;
     margin-top:-50px;
     padding: 10px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.button2:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
 .content-section-1 {
-	background: url(../images/gryta.jpg);
+	background: url(../images/sallad.jpg);
 	height: 250px;
 	background-size: 100%;
 	background-position: 50% 50%; 
 	background-repeat: no-repeat;
 	padding: 20px;
+	margin: 10px 0;
 }
 
 .content-section-2 {
-	background: url(../images/flexi.jpg);
+	background: url(../images/veg.jpg);
 	height: 250px;
 	background-size: 100%;
 	background-position: 50% 50%; 
 	background-repeat: no-repeat;
 	padding: 20px;
+	margin: 10px 0;
 }
 
 .content-section-3 {
-	background: url(../images/gryta1.jpg);
+	background: url(../images/fruit.jpg);
 	height: 250px;
 	background-size: 100%;
 	background-position: 50% 50%; 
 	background-repeat: no-repeat;
 	padding: 20px;
+	margin: 10px 0;
 }
 
 .content-section-4 {
-	background: url(../images/bowl.jpg);
+	background: url(../images/frulle.jpg);
 	height: 250px;
 	background-size: 100%;
 	background-position: 50% 50%; 
 	background-repeat: no-repeat;
 	padding: 20px;
+	margin: 10px 0;
 }
 
 .info {
@@ -122,8 +145,8 @@ button{
 	justify-content: space-around;
 	align-items: center;
 	height: 50%;
-	background-color: rgba(256, 256, 256, 0.4);
-	margin: 20px 0;
+	background-color: rgba(256, 256, 256, 0.6);
+	margin: 30px 0;
 }
 
 .icon-text-container {
@@ -131,4 +154,40 @@ button{
 	font-size: 20px;
 }
 
+/* Tablets */
+@media only screen and (min-width: 767px){
+
+		.content-section-1 {
+			height: 400px;
+		}
+
+		.content-section-2 {
+			height: 400px;
+
+		}
+		.content-section-3 {
+			height: 400px;
+
+		}
+		.content-section-4 {
+			height: 400px;
+		}
+
+		button {
+			margin-top: 50px;
+			padding:20px 30px;
+			width: 35%;
+			margin:50px;
+
+		}
+}
+
+
+
+/* Smaller desktop */
+@media only screen and (min-width: 960px) and (max-width: 1200px){
+}
+
+/* Big desktop */
+@media only screen and (min-width: 1200px){
 
