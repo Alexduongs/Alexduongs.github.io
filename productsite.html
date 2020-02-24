@@ -17,18 +17,35 @@
             <span></span><div></div>
               <p class="text-menu">MENU</p>
         </label>
-        <header class="header">
+       <header class="header">
             <img src="images/logo_img_tw.png" alt="" class="logohead">
             <i class="fas fa-user"></i>
             <i class="fas fa-shopping-basket"></i>
             <p>LOGGA IN</p>
-            <p>VARUKORG</p>
+            <input type="checkbox" id="basket-toggle">
+            <label class="basket-toggle" for="basket-toggle">
+                <p>VARUKORG</p>
+            </label>
+            <div class="basket">
+                <div><h1>VARUKORG</h1></div>
+                <div class="basket-border">
+                    <img class="basket_img" src="images/productkasse.jpg">
+                    <div class="basket-text">Vegokassen</div>
+                    <div class="price">499 kr</div>
+                </div>
+                <div class="basket-total">
+                    <div class="total-price">
+                        <label class="total-label">Totalt</label>
+                        <span class="price">499 kr</span>
+                    </div>
+                    <button class="basket-button">Gå till kassan</button>
+                </div>
+            </div>
         </header>
-			<nav class="menu">
-				<a href="#"><img class="hamburgerlogo" src="images/logo_tw3.png"></a>
+			<nav class="menu desktop-menu">
+				<a class="desktop-logo" href="#"><img class="hamburgerlogo" src="images/logo_tw3.png"></a>
  				<a href="index.html">Hem</a>
-            	<a href="productsite.html">Matkassar</a>
-      			<a href="categorysite.html">Kategori</a>
+      			<a href="categorysite.html">Matkassar</a>
 				<a href="#">Om oss</a>
             	<a href="#">Kontakt</a>
     		</nav>
