@@ -62,6 +62,7 @@ ul{
 .vegslog{
 	text-align: center;
 	font-size: 20px;
+	padding: 10px;
 }
 
 
@@ -177,6 +178,7 @@ ul{
 }
 /* Tablets */
 @media only screen and (min-width: 767px){
+
 			.navrecept button{
 			margin:0 auto;
 			}
@@ -185,22 +187,26 @@ ul{
 				padding: 20px 46px;
 			}
 
+			.omkassen button {
+				margin:0 auto;
+				width: 60%;
+
+			} 
+
 			.pris {
 				justify-content: space-between;
 				padding: 10px 30px;
 			}
 
 			.omkassen-text{
-				width: 30%;
+				width: 50%;
 
 
 			}
 
 			.productkasse {
-				width: 200px;
-				height: 200px;
-
-				/*align-self: flex-start;*/
+				width: 300px;
+				height: 300px;
 
 			}
 
@@ -208,6 +214,15 @@ ul{
 				display: flex;
 				flex-direction: row-reverse;
 				justify-content: space-around;
+			}
+			
+			.recept{
+				padding:0;
+			}
+
+			.receptbild {
+				width: 50%;
+				height: 50%;
 			}
 
 
@@ -229,14 +244,25 @@ ul{
 					margin:50px;
 				}
 
+				.recept {
+					display: flex;
+				}
+
 
 }
 
 /* Big desktop */
 @media only screen and (min-width: 1200px){
-	.omkassen{
-		margin:50px;
-	}
+
+					.omkassen{
+						margin:50px;
+					}
+
+					.recept {
+						display: flex;
+					}
+
+
 
 
 }
