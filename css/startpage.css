@@ -69,7 +69,7 @@ content section {
 
 .content-section2 p{
 	position: static!important;
-	margin: 0!important;
+	margin: 0 auto;
 }
 
 [class*=content-section-] {
@@ -78,6 +78,7 @@ content section {
 	align-items: flex-start;
 	margin: 5px 5px 0;
 	color: #fff;
+	border-radius: 5px;
 }
 
 [class*=content-section-] h1 {
@@ -109,7 +110,7 @@ content section {
 	margin-bottom: 5px;
 }
 
-button {
+[class*=content-section-] button {
 	position: absolute;
 	align-self: center;
 	margin-top: 100px;
@@ -181,7 +182,7 @@ button {
 		margin-top: 0;
 	}
 
-	button {
+	[class*=content-section-] button {
 		font-size: 1.6em;
 	}
 
@@ -201,11 +202,33 @@ button {
 @media only screen and (min-width: 1200px) {
 	.food section {
 		width: 600px;
-		height: 50%;
+		height: 600px;
+		overflow: hidden;
 	}
 
 	[class*=content-section-] h1 {
 	font-size: 3.5em;	
-}
+	}
+
+	.startpage_img {
+		margin-top: -180px;
+	}
+
+	.startpage_logo {
+		margin-top: -70px;
+	}
+
+	.content-img {
+		height: 800px;
+		width: 850px;
+	}
+
+	[class*=content-section-] {
+		margin-bottom: 5px;
+	}
+
+	.content-section2 {
+		height: 120px;
+	}
 }
 

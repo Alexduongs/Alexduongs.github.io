@@ -14,7 +14,7 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 9;
-    padding-left: 85px;
+    padding-left: 105px;
 }
 
 .hamburgerlogo {
@@ -37,7 +37,11 @@ header i {
 }
 
 header i:nth-child(2) {
-    margin-right: 23px;
+    margin-right: 33px;
+}
+
+header i:nth-child(3) {
+    margin-right: 0;
 }
 
 label p,
@@ -54,6 +58,7 @@ header p {
 header p:last-child {
     margin-left: 5px;
     margin-right: 2px;
+    margin-top: 32px;
 }
 
 /*Hamburger*/
@@ -94,6 +99,131 @@ input[type=checkbox] {
 .nav-toggle span:nth-child(3) {top: 15px;}
 .text-menu {margin-top: 18px;}
 
+input[type=checkbox] #basket-toggle {
+    position: fixed;
+    left: -9999px;
+    opacity: 0;
+    }
+
+.basket-toggle {
+    cursor: pointer;
+    z-index: 99;
+    margin-left:10px;
+    /* add the animation*/
+    transition: margin .3s;
+}
+
+.basket-toggle p {
+    /* add the animation*/
+    transition: all .3s;
+    }
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    position: fixed;
+    top: 50px;
+    min-height: 300px;
+    margin-right:-300px;
+    background: #fff;
+    transition: margin .3s;
+    right:0;
+    z-index: 99;
+    text-align: center;
+}
+
+
+
+input[type=checkbox]:checked ~ .basket {
+  margin-right: 0;
+}
+
+.basket_img {
+    width: 55px;
+    height: 55px;
+}
+
+.basket h1 {
+    margin: 10px 40px 0;
+    font-size: 1.4em;
+}
+
+.basket-text {
+    height: 100%;
+    align-self: center;
+}
+
+.price {
+    height: 100%;
+    align-self: center;
+}
+
+.basket-button {
+    background-color: #13693A;
+    border: none;
+    border-radius:5px;
+    color: white;
+    width: 50%;
+    padding:3px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.basket-border {
+    border-top: 1px solid rgba(51, 51, 51, 0.15);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*.basket-border .price{
+    margin-left: 60%;
+}*/
+
+.basket-total {
+    width: 100%;
+    margin-top: auto;
+    height: 80px;
+    border-top: 1px solid rgba(51, 51, 51, 0.15);
+    padding-top: 5px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.basket-total button {
+    width: 90%;
+    margin: 10px 5% 0;
+}
+
+.span {
+    display: none;
+}
+
+.span span {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #000;
+    border-radius: 1px;
+    /* add the animation*/
+    transition: all .3s;
+    }
+
+.span span:nth-child(1) {top: 5px;}
+.span span:nth-child(2) {top: 10px;}
+.span span:nth-child(3) {top: 15px;}
+
+
 
 .menu {
     display: flex;
@@ -101,7 +231,7 @@ input[type=checkbox] {
 	align-items: center;
     width: 300px;
     position: fixed;
-    top: 0;
+    top: 50px;
     height:100%;
     margin-left:-300px;
     background: #fff;
@@ -119,7 +249,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ .nav-toggle {
-  margin-left: 260px;
+
 }
 
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
@@ -180,7 +310,8 @@ footer div:last-child {
 h5 {font-size: 1.2em}
 
 @media only screen and (min-width: 767px){
-    
+
+
 }
 
 
