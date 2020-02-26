@@ -124,7 +124,7 @@ input[type=checkbox] #basket-toggle {
     justify-content: space-between;
     width: 300px;
     position: fixed;
-    top: 50px;
+    top: 100px;
     min-height: 300px;
     margin-right:-300px;
     background: #fff;
