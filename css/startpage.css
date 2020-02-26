@@ -113,16 +113,20 @@ content section {
 [class*=content-section-] button {
 	position: absolute;
 	align-self: center;
-	margin-top: 100px;
+	margin-top: 150px;
 	background-color: #13693A;
     border: none;
     border-radius:5px;
     color: white;
-    width: 30%;
+    width: 10%;
     height: 6%;
     padding:3px;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+[class*=content-section-] a {
+	color: #fff;
 }
 
 @media only screen and (min-width: 767px) {
@@ -134,7 +138,7 @@ content section {
 	flex-grow: 1;
 }
 
-.content section {
+	.content section {
 	flex-shrink: 1;
 	flex-grow: 1;
 	}
@@ -160,7 +164,7 @@ content section {
 	[class*=content-section-] h1 {
 	align-self: flex-start;
 	font-size: 2.5em;	
-}
+	}
 
 	[class*=content-section-] p {
 		margin: 0;
