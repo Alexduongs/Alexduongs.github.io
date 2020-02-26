@@ -76,19 +76,19 @@ content {
 	height: 10%;
 }
 
-button{
+a.button{
     background-color: #13693A;
     border: none;
-    border-radius:0;
     color: white;
-    width: 49%;
-    padding:15px 0;
+    width: 50%;
+    padding: 10px 0;
     text-decoration: none;
     font-size: 12px;
     padding: 10px;
     transition-duration: 0.4s;
     border-radius: 8px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .button1:hover {
@@ -157,45 +157,50 @@ button{
 /* Tablets */
 @media only screen and (min-width: 767px){
 
+		content {
+			margin-bottom: 30px;
+			margin-top: 40px;
+		}
+
 		.Matkassar {
 			display: flex;
 			flex-wrap: wrap;
 		}
 
 		.content-section-1 {
-			height: 425px;
+			height: 400px;
 			width: 48%;
 			border-radius: 5%;
 			margin: 7px 7px;
+
 		}
 
 		.content-section-2 {
-			height: 425px;
+			height: 400px;
 			width: 48%;
 			border-radius: 5%;
 			margin: 7px 7px;
+
 		}
 		.content-section-3 {
-			height: 425px;
+			height: 400px;
 			width: 48%;
 			border-radius: 5%;
 			margin: 7px 7px;
 		}
 		.content-section-4 {
-			height: 425px;
+			height: 400px;
 			width: 48%;
 			border-radius: 5%;
 			margin: 7px 7px;
 		}
 
 		.veg h2 {
-			font-size: 22px;
-			margin-top: 50px;
+			font-size: 22px;			
 		}
 
 		.flex h2 {
 			font-size: 22px;
-			margin-top: 50px;
 		}
 
 		.gluten h2 {
@@ -207,13 +212,13 @@ button{
 		}
 
 		.info {
-			margin: 50px 0;
+			margin: 40px 0;
 		}
 
 		button {
 			font-size: 16px;
-			margin-top: 5%;
-			padding: 5px 0;
+			margin-bottom: 20px;
+		
 		}
 
 		.icon-text-container {
