@@ -76,19 +76,16 @@ content {
 	height: 10%;
 }
 
-a.button{
+a.button {
     background-color: #13693A;
-    border: none;
     color: white;
-    width: 50%;
     padding: 10px 0;
-    text-decoration: none;
     font-size: 12px;
     padding: 10px;
     transition-duration: 0.4s;
     border-radius: 8px;
     text-transform: uppercase;
-    text-align: center;
+    margin-left: 50px;
 }
 
 .button1:hover {
